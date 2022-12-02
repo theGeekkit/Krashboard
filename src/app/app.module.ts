@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -17,6 +18,7 @@ import { WidgetComponent } from './widget/widget.component';
     MatIconModule,
     MatToolbarModule,
     MatCardModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent],
