@@ -1,0 +1,8 @@
+.mat-toolbar {
+  background-color: cadetblue;
+  color: aliceblue;
+  font-size: 75px;
+}
+button {
+  justify-content: right;
+}
