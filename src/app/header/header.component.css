@@ -20,3 +20,7 @@ mat-toolbar {
 .menu {
   color: white;
 }
+.sideNavContainer{
+  display: flex;
+  flex-direction: row;
+}
