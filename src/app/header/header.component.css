@@ -1,10 +1,11 @@
 mat-toolbar {
   font-size: 75px;
-  margin: 10px;
+  height: 90px;
 }
 .title {
   color: white;
   font-size: 75px;
+  padding: 12px;
 }
 
 .menu-button {
