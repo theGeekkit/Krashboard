@@ -1,5 +1,5 @@
 mat-toolbar {
-  background-color: grey;
+  background-color: cadetblue;
 }
 .title {
   color: white;
@@ -8,4 +8,15 @@ mat-toolbar {
 
 .menu-button {
   background-color: transparent;
+}
+.spacer {
+  flex: 1 1 auto;
+}
+
+.menu:hover {
+  cursor: pointer;
+}
+
+.menu {
+  color: white;
 }
