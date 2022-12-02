@@ -5,6 +5,7 @@ mat-toolbar {
 .title {
   color: white;
   font-size: 75px;
+  padding: 12px;
 }
 
 .menu-button {
