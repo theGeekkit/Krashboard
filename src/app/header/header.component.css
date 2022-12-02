@@ -1,6 +1,6 @@
 mat-toolbar {
   font-size: 75px;
-  margin: 10px;
+  padding: 10px;
 }
 .title {
   color: white;
