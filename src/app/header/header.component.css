@@ -1,8 +1,11 @@
-.mat-toolbar {
-  background-color: cadetblue;
-  color: aliceblue;
-  font-size: 75px;
+mat-toolbar {
+  background-color: grey;
 }
-button {
-  justify-content: right;
+.title {
+  color: white;
+  font-size: x-large;
+}
+
+.menu-button {
+  background-color: transparent;
 }
