@@ -1,3 +1,12 @@
 .mat-card {
-background-color: cadetblue;
+  background-color: cadetblue;
+  max-width: 500px;
+  min-width: 500px;
+  max-height: 350px;
+  min-height: 350px;
+  margin-top: 16px;
+}
+
+mat-icon:hover {
+  cursor: pointer;
 }
