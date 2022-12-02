@@ -5,6 +5,8 @@
   max-height: 350px;
   min-height: 350px;
   margin-top: 16px;
+  justify-content: left;
+  display: flex;
 }
 
 mat-icon:hover {
