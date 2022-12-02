@@ -1,9 +1,10 @@
 mat-toolbar {
   background-color: cadetblue;
+  font-size: 75px;
 }
 .title {
   color: white;
-  font-size: x-large;
+  font-size: 75px;
 }
 
 .menu-button {
