@@ -18,7 +18,8 @@ import { WidgetContainerComponent } from './widget-container/widget-container.co
     MatIconModule,
     MatToolbarModule,
     MatCardModule,
-    MatSidenavModule
+    MatSidenavModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent],
