@@ -1,0 +1,11 @@
+mat-toolbar {
+  background-color: grey;
+}
+.title {
+  color: white;
+  font-size: x-large;
+}
+
+.menu-button {
+  background-color: transparent;
+}
