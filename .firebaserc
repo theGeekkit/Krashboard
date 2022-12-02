@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "krashboard": {
+      "hosting": {
+        "Krashboard": [
+          "krashboard"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "krashboard"
+  }
+}
