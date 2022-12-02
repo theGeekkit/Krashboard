@@ -8,7 +8,12 @@ import { MatToolbarModule } from '@angular/material';
 import { MatIconModule } from '@angular/material/icon';
 @NgModule({
   declarations: [AppComponent, HeaderComponent],
-  imports: [BrowserModule, BrowserAnimationsModule],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatIconModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
