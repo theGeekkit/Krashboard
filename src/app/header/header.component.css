@@ -1,5 +1,6 @@
 mat-toolbar {
   background-color: cadetblue;
+  height: 50px
 }
 .title {
   color: white;
@@ -24,3 +25,5 @@ mat-toolbar {
   display: flex;
   flex-direction: row;
 }
+
+

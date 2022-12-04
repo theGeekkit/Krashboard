@@ -3,37 +3,26 @@
   <span class="spacer"></span>
   <mat-icon
     class="menu"
+    *ngIf="!menuService.hamburgerMenu"
     (click)="menuService.hamburgerMenu = !menuService.hamburgerMenu"
     >menu
   </mat-icon>
 
   <mat-drawer-container
+    *ngIf="menuService.hamburgerMenu"
     class="example-container"
     autosize
-    *ngIf="menuService.hamburgerMenu"
   >
-    <mat-drawer #drawer class="example-sidenav" mode="side"> </mat-drawer>
+    <mat-drawer #drawer> </mat-drawer>
 
     <div class="sideNavContainer">
-      <button type="button" mat-button>Add New Widget</button>
+      <button
+        type="button"
+        mat-button
+        (click)="menuService.openDialog(); menuService.hamburgerMenu = false"
+      >
+        Add New Widget
+      </button>
     </div>
   </mat-drawer-container>
 </mat-toolbar>
-
-<ol>
-  <li>
-    <mat-form-field>
-      <input
-        matInput
-        [(ngModel)]="widgetTitle"
-        placeholder="Enter Title of Widget?"
-      />
-    </mat-form-field>
-  </li>
-  <li>
-    <button mat-raised-button (click)="openDialog()">Pick one</button>
-  </li>
-  <li *ngIf="animal">
-    You chose: <i>{{ animal }}</i>
-  </li>
-</ol>

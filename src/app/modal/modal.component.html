@@ -1,0 +1,16 @@
+<div class="modalContainer">
+  <label>Title of Widget</label>
+  <input matInput [(ngModel)]="menuService.widgetTitle" />
+
+  <div mat-dialog-actions>
+    <button mat-raised-button [mat-dialog-close]="menuService.widgetTitle">
+      Create</button
+    ><button
+      mat-raised-button
+      [mat-dialog-close]
+      (click)="menuService.widgetTitle = null"
+    >
+      Cancel
+    </button>
+  </div>
+</div>
