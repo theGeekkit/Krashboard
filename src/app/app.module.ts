@@ -11,7 +11,6 @@ import { MatCardModule } from '@angular/material/card';
 import { WidgetContainerComponent } from './widget-container/widget-container.component';
 import { DialogAddWidgetComponent } from './dialog-add-widget/dialog-add-widget.component';
 import { MatDialogModule } from '@angular/material/dialog';
-import { MatDialog } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -28,7 +27,7 @@ import { MatDialog } from '@angular/material/dialog';
     MatCardModule,
     MatSidenavModule,
     MatDialogModule,
-    MatDialog,
+
   ],
   providers: [],
   bootstrap: [AppComponent],
