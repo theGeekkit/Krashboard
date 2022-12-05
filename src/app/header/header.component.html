@@ -1,22 +1,30 @@
 <mat-toolbar color="primary">
   <span class="title">Krashboard</span>
   <span class="spacer"></span>
-  <mat-icon class="menu">menu</mat-icon>
+  <mat-icon
+    class="menu"
+    *ngIf="!menuService.hamburgerMenu"
+    (click)="menuService.hamburgerMenu = !menuService.hamburgerMenu"
+    >menu
+  </mat-icon>
 
-  <!-- <mat-drawer-container class="example-container" autosize>
-    <mat-drawer #drawer class="example-sidenav" mode="side">
+  <mat-drawer-container
+    *ngIf="menuService.hamburgerMenu"
+    class="example-container"
+    autosize
+  >
+    <mat-drawer #drawer> </mat-drawer>
 
-      <button (click)="hamburgerMenu = !hamburgerMenu" mat-raised-button>
-
-        Toggle extra text
-      </button>
-    </mat-drawer>
-
-    <div class="example-sidenav-content">
-      <button type="button" mat-button (click)="drawer.toggle()">
-        Toggle sidenav
+    <div class="sideNavContainer">
+      <button
+        type="button"
+        mat-button
+        (click)="menuService.openDialog(); menuService.hamburgerMenu = false"
+      >
+        Add New Widget
       </button>
     </div>
 
-  </mat-drawer-container> -->
+
+  </mat-drawer-container>
 </mat-toolbar>
