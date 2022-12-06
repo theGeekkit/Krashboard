@@ -6,7 +6,11 @@ import { Widget } from '../widget-model';
 })
 export class WidgetService implements OnInit {
 
-  widgets: Widget[] = [];
+  widgets: Widget[] = [
+    {
+      title: "Dad Jokes", content: ""
+    },
+  ];
 
   constructor() { }
   ngOnInit(): void {
