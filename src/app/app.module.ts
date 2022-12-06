@@ -35,7 +35,6 @@ import { WidgetContainerComponent } from './widget-container/widget-container.co
     FormsModule,
     MatInputModule,
     MatButtonModule,
-    WidgetContainerComponent,
     MatCardModule,
   ],
 })
