@@ -1,6 +1,8 @@
 mat-toolbar {
   font-size: 75px;
   height: 90px;
+  background-color: cadetblue;
+  height: 50px
 }
 .title {
   color: white;
@@ -23,3 +25,9 @@ mat-toolbar {
   color: white;
   font-size: xx-large;
 }
+.sideNavContainer{
+  display: flex;
+  flex-direction: row;
+}
+
+
