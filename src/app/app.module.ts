@@ -13,9 +13,26 @@ import { MatCardModule } from '@angular/material/card';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { ModalComponent } from './modal/modal.component';
-import { WidgetContainerComponent } from './widget-container/widget-container.component';
+import { WidgetContainerComponent } from "./widget-container/widget-container.component";
+
 
 @NgModule({
+    declarations: [AppComponent, HeaderComponent, ModalComponent,],
+    providers: [],
+    bootstrap: [AppComponent],
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        MatIconModule,
+        MatToolbarModule,
+        MatSidenavModule,
+        MatDialogModule,
+        MatFormFieldModule,
+        FormsModule,
+        MatInputModule,
+        MatButtonModule,
+        WidgetContainerComponent
+    ]
   declarations: [
     AppComponent,
     HeaderComponent,
