@@ -14,6 +14,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { ModalComponent } from './modal/modal.component';
 import { WidgetContainerComponent } from './widget-container/widget-container.component';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { WidgetContainerComponent } from './widget-container/widget-container.co
     MatInputModule,
     MatButtonModule,
     MatCardModule,
+    MatMenuModule,
   ],
 })
 export class AppModule {}
