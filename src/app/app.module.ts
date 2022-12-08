@@ -20,7 +20,7 @@ import { WidgetContainerComponent } from './widget-container/widget-container.co
     AppComponent,
     HeaderComponent,
     ModalComponent,
-    WidgetContainerComponent,
+    WidgetContainerComponent
   ],
   providers: [],
   bootstrap: [AppComponent],
@@ -35,7 +35,7 @@ import { WidgetContainerComponent } from './widget-container/widget-container.co
     FormsModule,
     MatInputModule,
     MatButtonModule,
-    MatCardModule,
+    MatCardModule
   ],
 })
 export class AppModule {}
