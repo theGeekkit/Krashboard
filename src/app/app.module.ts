@@ -38,6 +38,7 @@ import { MatMenuModule } from '@angular/material/menu';
     MatButtonModule,
     MatCardModule,
     MatMenuModule,
+    MatCardModule,
   ],
 })
 export class AppModule {}
