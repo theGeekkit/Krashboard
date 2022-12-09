@@ -10,7 +10,7 @@ mat-card {
   min-width: 500px;
   max-height: 350px;
   min-height: 350px;
-  margin-top: 16px;
+  margin: 16px;
   justify-content: center;
   display: flex;
 }
