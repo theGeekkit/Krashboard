@@ -1,7 +1,12 @@
 <form>
   <div class="modalContainer">
     <label>Title of Widget</label>
-    <input matInput [(ngModel)]="menuService.widgetTitle" required />
+    <input
+      matInput
+      [(ngModel)]="menuService.widgetTitle"
+      name="title"
+      required
+    />
 
     <div mat-dialog-actions>
       <button
