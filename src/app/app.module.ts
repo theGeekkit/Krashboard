@@ -14,13 +14,14 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { ModalComponent } from './modal/modal.component';
 import { WidgetContainerComponent } from './widget-container/widget-container.component';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ModalComponent,
-    WidgetContainerComponent
+    WidgetContainerComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],
@@ -35,7 +36,9 @@ import { WidgetContainerComponent } from './widget-container/widget-container.co
     FormsModule,
     MatInputModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    MatMenuModule,
+    MatCardModule,
   ],
 })
 export class AppModule {}

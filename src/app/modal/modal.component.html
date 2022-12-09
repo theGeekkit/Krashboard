@@ -1,9 +1,9 @@
 <div class="modalContainer">
   <label>Title of Widget</label>
-  <input matInput [(ngModel)]="menuService.widgetTitle" />
+  <input matInput [(ngModel)]="menuService.widgetTitle" required/>
 
   <div mat-dialog-actions>
-    <button mat-raised-button [mat-dialog-close]="menuService.widgetTitle">
+    <button mat-raised-button [mat-dialog-close]="menuService.widgetTitle" [disabled]="!menuService.disableCreateButton()">
       Create</button
     ><button
       mat-raised-button
