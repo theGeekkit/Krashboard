@@ -11,8 +11,18 @@ export class WidgetService implements OnInit {
       title: "Dad Jokes", content: ""
     },
   ];
+  name: string = "name";
 
-  constructor() { }
+  localStorage(){
+    localStorage.setItem('storedWidgets', JSON.stringify(this.widgets))
+  }
+
+
+  constructor() {
+    this.localStorage()
+  }
+
+
   ngOnInit(): void {
     throw new Error('Method not implemented.');
   }
