@@ -15,6 +15,7 @@ import { HeaderComponent } from './header/header.component';
 import { ModalComponent } from './modal/modal.component';
 import { WidgetContainerComponent } from './widget-container/widget-container.component';
 import { MatMenuModule } from '@angular/material/menu';
+import { WidgetCardComponent } from './widget-card/widget-card.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { MatMenuModule } from '@angular/material/menu';
     HeaderComponent,
     ModalComponent,
     WidgetContainerComponent,
+    WidgetCardComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -4,6 +4,13 @@
   </button>
 </mat-card>
 
+<app-widget-card
+  *ngFor="let card of cards; let i = index"
+  [card]="card"
+  [i]="i"
+>
+</app-widget-card>
+
 <!-- <form [formGroup]="widgetService.widgetForm" (ngSubmit)="widgetService.onSubmit()">
   <div class="container">
 
@@ -24,3 +31,8 @@
   </div>
 
 </form> -->
+<!-- <div class="container">
+  <mat-card class="widgetCard" *ngFor="let item of widgetService.widgets">
+    {{ item.title }} - {{ item.content }}
+  </mat-card>
+</div> -->
