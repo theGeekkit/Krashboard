@@ -4,9 +4,10 @@ mat-card {
   min-width: 500px;
   max-height: 350px;
   min-height: 350px;
-  margin-top: 16px;
+  margin: 16px;
+  margin-left: 15px;
+  margin-right: 15px;
   float: left;
-  padding: 15px;
 }
 
 .remove {
