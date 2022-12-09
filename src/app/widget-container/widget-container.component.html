@@ -1,8 +1,15 @@
 <mat-card>
-  <button class="add-button">
+  <button (click)="menuService.openDialog()" class="add-button">
     <mat-icon>add_circle_outline</mat-icon>
   </button>
 </mat-card>
+
+<app-widget-card
+  *ngFor="let card of cards; let i = index"
+  [card]="card"
+  [i]="i"
+>
+</app-widget-card>
 
 <!-- <form [formGroup]="widgetService.widgetForm" (ngSubmit)="widgetService.onSubmit()">
   <div class="container">

@@ -3,7 +3,11 @@
   <input matInput [(ngModel)]="menuService.widgetTitle" />
 
   <div mat-dialog-actions>
-    <button mat-raised-button [mat-dialog-close]="menuService.widgetTitle">
+    <button
+      (click)="createCard()"
+      mat-raised-button
+      [mat-dialog-close]="menuService.widgetTitle"
+    >
       Create</button
     ><button
       mat-raised-button

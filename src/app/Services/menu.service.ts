@@ -7,6 +7,7 @@ import { ModalComponent } from '../modal/modal.component';
   providedIn: 'root',
 })
 export class MenuService {
+  cards: any = [];
   hamburgerMenu = false;
   widgetTitle: string | null = '';
 
