@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { WidgetService } from '../Services/widget.service';
 import { WidgetCardComponent } from './widget-card.component';
 
 describe('WidgetCardComponent', () => {
