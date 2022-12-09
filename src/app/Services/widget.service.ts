@@ -16,8 +16,16 @@ export class WidgetService implements OnInit {
       title: "Dad Jokes", content: ""
     },
   ];
+  name: string = "name";
+
+  localStorage(){
+    localStorage.setItem('storedWidgets', JSON.stringify(this.widgets))
+  }
+
 
   constructor() {
+    this.localStorage()
+
     this.widgetForm = new FormGroup({
       title: new FormControl(null),
       content: new FormControl(null),

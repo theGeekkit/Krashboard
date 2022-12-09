@@ -7,5 +7,9 @@
       <mat-icon>add_circle_outline</mat-icon>
       <span>Add New Widget</span>
     </button>
+    <button (click)="menuService.clearAllWidgets()" mat-menu-item>
+      <mat-icon>delete_forever</mat-icon>
+      <span>Clear All Widgets</span>
+    </button>
   </mat-menu>
 </mat-toolbar>

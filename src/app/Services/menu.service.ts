@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
-
 import { MatDialog } from '@angular/material/dialog';
-
+import { WidgetService } from 'src/app/Services/widget.service';
 import { ModalComponent } from '../modal/modal.component';
+
+
 @Injectable({
   providedIn: 'root',
 })
@@ -11,7 +12,7 @@ export class MenuService {
   hamburgerMenu = false;
   widgetTitle: string | null = '';
 
-  constructor(public dialog: MatDialog) {}
+  constructor(public dialog: MatDialog, public widgetService: WidgetService) {}
 
   openDialog(): void {
     const dialogRef = this.dialog.open(ModalComponent, {
@@ -33,5 +34,9 @@ export class MenuService {
       return false
     }
     return true
+  }
+
+  clearAllWidgets() {
+    this.widgetService.widgets=[]
   }
 }
