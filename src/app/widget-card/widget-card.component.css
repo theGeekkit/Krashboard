@@ -1,7 +1,15 @@
-.mat-card {
-    max-width: 500px;
-    min-width: 500px;
-    max-height: 350px;
-    min-height: 350px;
-    margin-top: 16px;
+mat-card {
+  background-color: cadetblue;
+  max-width: 500px;
+  min-width: 500px;
+  max-height: 350px;
+  min-height: 350px;
+  margin: 16px;
+  margin-left: 15px;
+  margin-right: 15px;
+  float: left;
+}
+
+.remove {
+  float: right;
 }

@@ -23,7 +23,7 @@ import { WidgetCardComponent } from './widget-card/widget-card.component';
     HeaderComponent,
     ModalComponent,
     WidgetContainerComponent,
-    WidgetCardComponent,
+    WidgetCardComponent
   ],
   providers: [],
   bootstrap: [AppComponent],
@@ -39,8 +39,7 @@ import { WidgetCardComponent } from './widget-card/widget-card.component';
     MatInputModule,
     MatButtonModule,
     MatCardModule,
-    MatMenuModule,
-    MatCardModule,
+    MatMenuModule
   ],
 })
 export class AppModule {}

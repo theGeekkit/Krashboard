@@ -14,6 +14,6 @@ export class ModalComponent implements OnInit {
 
   createCard() {
     const newCard = this.menuService.widgetTitle;
-    this.menuService.cards.push(newCard);
+    this.menuService.cards.splice(0, 0, newCard);
   }
 }
