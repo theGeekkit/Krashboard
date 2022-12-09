@@ -11,6 +11,8 @@ mat-card {
   max-height: 350px;
   min-height: 350px;
   margin: 16px;
+  margin-left: 15px;
+  margin-right: 15px;
   justify-content: center;
   display: flex;
 }
