@@ -1,5 +1,5 @@
 import { Injectable, OnInit, Component } from '@angular/core';
-import { FormGroup } from '@angular/forms';
+import { FormControl, FormGroup } from '@angular/forms';
 import { Widget } from '../widget-model';
 
 @Injectable({
@@ -17,7 +17,12 @@ export class WidgetService implements OnInit {
     },
   ];
 
-  constructor() { }
+  constructor() {
+    this.widgetForm = new FormGroup({
+      title: new FormControl(null),
+      content: new FormControl(null),
+    });
+   }
   ngOnInit(): void {
     throw new Error('Method not implemented.');
   }
