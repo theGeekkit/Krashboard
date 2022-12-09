@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuService } from '../Services/menu.service';
 import { MatDialog, MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
-
+import {WidgetService} from 'src/app/Services/widget.service'
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -15,7 +15,7 @@ hamburgerMenu=false;
 
 
 
-  constructor(public menuService: MenuService, public dialog: MatDialog) { }
+  constructor(public menuService: MenuService, public dialog: MatDialog, public widgetService: WidgetService) { }
 
 
   ngOnInit(): void {
