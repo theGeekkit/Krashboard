@@ -1,20 +1,23 @@
-<div class="modalContainer">
-  <label>Title of Widget</label>
-  <input matInput [(ngModel)]="menuService.widgetTitle" />
+<form>
+  <div class="modalContainer">
+    <label>Title of Widget</label>
+    <input matInput [(ngModel)]="menuService.widgetTitle" required />
 
-  <div mat-dialog-actions>
-    <button
-      (click)="createCard()"
-      mat-raised-button
-      [mat-dialog-close]="menuService.widgetTitle"
-    >
-      Create</button
-    ><button
-      mat-raised-button
-      [mat-dialog-close]
-      (click)="menuService.widgetTitle = null"
-    >
-      Cancel
-    </button>
+    <div mat-dialog-actions>
+      <button
+        mat-raised-button
+        [mat-dialog-close]="menuService.widgetTitle"
+        [disabled]="!menuService.disableCreateButton()"
+        (click)="createCard()"
+      >
+        Create</button
+      ><button
+        mat-raised-button
+        [mat-dialog-close]
+        (click)="menuService.widgetTitle = null"
+      >
+        Cancel
+      </button>
+    </div>
   </div>
-</div>
+</form>

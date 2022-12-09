@@ -27,4 +27,11 @@ export class MenuService {
       }
     });
   }
+
+  disableCreateButton(){
+    if (this.widgetTitle == null || this.widgetTitle.trim() == "") {
+      return false
+    }
+    return true
+  }
 }
