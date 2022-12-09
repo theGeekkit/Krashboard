@@ -13,4 +13,6 @@ export class WidgetCardComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  removeCard() {}
 }

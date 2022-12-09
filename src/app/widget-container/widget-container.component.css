@@ -1,4 +1,10 @@
-.mat-card {
+.card-holder {
+  max-width: 500px;
+  max-height: 500px;
+  float: left;
+}
+
+mat-card {
   background-color: cadetblue;
   max-width: 500px;
   min-width: 500px;
