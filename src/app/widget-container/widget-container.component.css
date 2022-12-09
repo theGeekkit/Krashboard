@@ -2,6 +2,9 @@
   max-width: 500px;
   max-height: 500px;
   float: left;
+  margin: 16px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 mat-card {
