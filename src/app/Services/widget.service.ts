@@ -1,10 +1,15 @@
 import { Injectable, OnInit, Component } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 import { Widget } from '../widget-model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class WidgetService implements OnInit {
+
+  widgetForm!: FormGroup;
+
+  emptylist = false;
 
   widgets: Widget[] = [
     {
