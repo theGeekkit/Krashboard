@@ -1,5 +1,4 @@
 mat-card {
-  background-color: cadetblue;
   max-width: 500px;
   min-width: 500px;
   max-height: 350px;
@@ -10,10 +9,6 @@ mat-card {
   float: left;
 }
 
-button {
-  color: white;
-
-}
 
 .remove {
   float: right;

@@ -1,4 +1,5 @@
 mat-toolbar {
+  height: 75px;
   font-size: 75px;
   padding-top: 15px;
   padding-bottom: 12px;
