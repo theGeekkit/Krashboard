@@ -1,16 +1,14 @@
 <div class="card-holder">
-  <mat-card>
-    <button (click)="menuService.openDialog()" class="add-button">
-      <mat-icon>add_circle_outline</mat-icon>
-    </button>
+  <mat-card class="add-card">
+    <mat-icon (click)="menuService.openDialog()" class="add-button"
+      >add_circle_outline</mat-icon
+    >
   </mat-card>
+
+  <app-widget-card
+    *ngFor="let card of cards; let i = index"
+    [card]="card"
+    [i]="i"
+  >
+  </app-widget-card>
 </div>
-
-<app-widget-card
-  *ngFor="let card of cards; let i = index"
-  [card]="card"
-  [i]="i"
->
-</app-widget-card>
-
-
