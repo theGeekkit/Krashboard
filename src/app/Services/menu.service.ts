@@ -9,21 +9,25 @@ import { ModalComponent } from '../modal/modal.component';
 export class MenuService {
   cards: any = [];
   hamburgerMenu = false;
-  widgetTitle: string = '';
+  widgetTitle: string  = '';
+  widgetContent: string = '';
 
   constructor(public dialog: MatDialog) {}
 
   openDialog(): void {
     const dialogRef = this.dialog.open(ModalComponent, {
       width: '250px',
-      data: { widgetTitle: this.widgetTitle },
+      data: { widgetTitle: this.widgetTitle,
+      widgetContent: this.widgetContent },
     });
 
     dialogRef.afterClosed().subscribe((result) => {
       console.log('The dialog was closed');
       console.log(this.widgetTitle);
+      console.log(this.widgetContent);
       if (result != null) {
         this.widgetTitle = result;
+        this.widgetContent = result;
       }
     });
   }
