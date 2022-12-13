@@ -7,11 +7,19 @@
       name="title"
       required
     />
+    <label>API Content</label>
+    <input
+    matInput
+    [(ngModel)]="menuService.widgetContent"
+    name="API content"
+    required
+    />
 
     <div mat-dialog-actions>
       <button
         mat-raised-button
         [mat-dialog-close]="menuService.widgetTitle"
+        [mat-dialog-close]="menuService.widgetContent"
         [disabled]="!menuService.disableCreateButton()"
         (click)="createCard(); widgetService.pushToStorage()"
       >
