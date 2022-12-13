@@ -3,6 +3,7 @@ import { FormControl, FormGroup } from '@angular/forms';
 import { Widget } from '../widget-model';
 import { MenuService} from 'src/app/Services/menu.service'
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -12,18 +13,13 @@ export class WidgetService implements OnInit {
 
   emptylist = false;
 
-  widgets: Widget[] = [
-    {
-      title: "Dad Jokes", content: ""
-    },
-  ];
-  name: string = "name";
+  // widgets: Widget[] = [
+  //   {
+  //     title: "Dad Jokes", content: ""
+  //   },
+  // ];
+  // name: string = "name";
 
-  pushToStorage(){
-
-    this.widgets.push({title: this.menuService.widgetTitle, content: ""})
-    localStorage.setItem('storedWidgets', JSON.stringify(this.widgets))
-  }
 
 
   constructor( public menuService:MenuService
@@ -35,12 +31,20 @@ export class WidgetService implements OnInit {
       content: new FormControl(null),
     });
    }
+
+   pushToStorage(){
+
+    this.menuService.cards.push({title: this.menuService.widgetTitle, content: ""})
+    localStorage.setItem('storedWidgets', JSON.stringify(this.menuService.cards))
+  }
+
   ngOnInit(): void {
     throw new Error('Method not implemented.');
   }
 
  clearAllWidgets() {
- this.widgets=[]
+ this.menuService.cards=[]
+ this.pushToStorage()
 }
 }
 
