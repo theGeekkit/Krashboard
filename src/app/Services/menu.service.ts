@@ -36,6 +36,6 @@ export class MenuService {
   }
 
   clearAllWidgets() {
-    this.widgetService.widgets = [];
+    this.cards = [];
   }
 }
