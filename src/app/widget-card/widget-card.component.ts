@@ -8,7 +8,7 @@ import { MenuService } from '../Services/menu.service';
   styleUrls: ['./widget-card.component.css'],
 })
 export class WidgetCardComponent implements OnInit {
-  @Input() card: any = '';
+  @Input() card: any = {};
   @Input() i: any = '';
 
   constructor(public menuService: MenuService) {}

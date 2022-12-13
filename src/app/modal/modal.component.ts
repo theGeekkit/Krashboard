@@ -8,12 +8,19 @@ import { WidgetService } from '../Services/widget.service';
   styleUrls: ['./modal.component.css'],
 })
 export class ModalComponent implements OnInit {
-  constructor(public menuService: MenuService, public widgetService:WidgetService) {}
+  constructor(
+    public menuService: MenuService,
+    public widgetService: WidgetService
+  ) {}
 
   ngOnInit(): void {}
 
   createCard() {
-    const newCard = this.menuService.widgetTitle;
+    const newCard = {
+      title: this.menuService.widgetTitle,
+      content: this.menuService.widgetContent,
+    };
     this.menuService.cards.splice(0, 0, newCard);
+    console.log(this.menuService.cards);
   }
 }
