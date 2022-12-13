@@ -16,6 +16,7 @@ import { ModalComponent } from './modal/modal.component';
 import { WidgetContainerComponent } from './widget-container/widget-container.component';
 import { MatMenuModule } from '@angular/material/menu';
 import { WidgetCardComponent } from './widget-card/widget-card.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import { WidgetCardComponent } from './widget-card/widget-card.component';
     HeaderComponent,
     ModalComponent,
     WidgetContainerComponent,
-    WidgetCardComponent
+    WidgetCardComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],
@@ -39,7 +40,8 @@ import { WidgetCardComponent } from './widget-card/widget-card.component';
     MatInputModule,
     MatButtonModule,
     MatCardModule,
-    MatMenuModule
+    MatMenuModule,
+    HttpClientModule,
   ],
 })
 export class AppModule {}
