@@ -1,14 +1,17 @@
+.remove {
+  display: flex;
+  align-items: flex-end;
+  padding: 8px;
+  margin-left: 16px;
+}
+
 mat-card {
   background-color: cadetblue;
   max-width: 500px;
   min-width: 500px;
   max-height: 350px;
   min-height: 350px;
-  margin-top: 16px;
-  float: left;
-  padding: 15px;
-}
-
-.remove {
-  float: right;
+  margin: 16px;
+  padding: 0px;
+  order: 2;
 }

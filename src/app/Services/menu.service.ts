@@ -3,7 +3,6 @@ import { MatDialog } from '@angular/material/dialog';
 import { WidgetService } from 'src/app/Services/widget.service';
 import { ModalComponent } from '../modal/modal.component';
 
-
 @Injectable({
   providedIn: 'root',
 })
@@ -29,14 +28,14 @@ export class MenuService {
     });
   }
 
-  disableCreateButton(){
-    if (this.widgetTitle == null || this.widgetTitle.trim() == "") {
-      return false
+  disableCreateButton() {
+    if (this.widgetTitle == null || this.widgetTitle.trim() == '') {
+      return false;
     }
-    return true
+    return true;
   }
 
   clearAllWidgets() {
-    this.widgetService.widgets=[]
+    this.cards = [];
   }
 }

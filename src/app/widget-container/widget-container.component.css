@@ -1,30 +1,39 @@
 .card-holder {
-  max-width: 500px;
-  max-height: 500px;
-  float: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 16px;
 }
 
 mat-card {
-  background-color: cadetblue;
+  background-color: cadetblue !important;
   max-width: 500px;
   min-width: 500px;
   max-height: 350px;
   min-height: 350px;
-  margin-top: 16px;
-  justify-content: center;
-  display: flex;
+  margin: 16px;
+  padding: 0px;
+  order: 1;
 }
 
-mat-icon:hover {
+.add-button {
+  color: white;
+}
+.add-button:hover {
   cursor: pointer;
 }
 
 mat-icon {
-  font-size: 170px;
-  height: 170px;
+  height: 150px;
+  width: 150px;
+  font-size: 150px;
 }
 
-.add-button {
-  background-color: transparent;
-  border-color: transparent;
+.add-card {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
