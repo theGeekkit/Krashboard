@@ -1,6 +1,7 @@
 import { Injectable, OnInit, Component } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { Widget } from '../widget-model';
+import { MenuService} from 'src/app/Services/menu.service'
 
 @Injectable({
   providedIn: 'root'
@@ -18,13 +19,16 @@ export class WidgetService implements OnInit {
   ];
   name: string = "name";
 
-  localStorage(){
+  pushToStorage(){
+
+    this.widgets.push({title: this.menuService.widgetTitle, content: ""})
     localStorage.setItem('storedWidgets', JSON.stringify(this.widgets))
   }
 
 
-  constructor() {
-    this.localStorage()
+  constructor( public menuService:MenuService
+  ) {
+    this.pushToStorage()
 
     this.widgetForm = new FormGroup({
       title: new FormControl(null),
@@ -34,4 +38,9 @@ export class WidgetService implements OnInit {
   ngOnInit(): void {
     throw new Error('Method not implemented.');
   }
+
+ clearAllWidgets() {
+ this.widgets=[]
 }
+}
+

@@ -13,13 +13,13 @@
         mat-raised-button
         [mat-dialog-close]="menuService.widgetTitle"
         [disabled]="!menuService.disableCreateButton()"
-        (click)="createCard()"
+        (click)="createCard(); widgetService.pushToStorage()"
       >
         Create</button
       ><button
         mat-raised-button
         [mat-dialog-close]
-        (click)="menuService.widgetTitle = null"
+        (click)="menuService.widgetTitle = ''"
       >
         Cancel
       </button>

@@ -13,9 +13,9 @@ mat-card {
   min-width: 500px;
   max-height: 350px;
   min-height: 350px;
-  margin: 16px;
-  padding: 0px;
-  order: 1;
+  margin-top: 16px;
+  justify-content: center;
+  display: flex;
 }
 
 .add-button {
