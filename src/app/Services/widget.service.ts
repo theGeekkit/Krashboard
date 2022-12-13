@@ -12,7 +12,7 @@ export class WidgetService implements OnInit {
 
   emptylist = false;
 
-  widgets: Widget[] = [
+  cards: Widget[] = [
     {
       title: "Dad Jokes", content: ""
     },
@@ -21,8 +21,8 @@ export class WidgetService implements OnInit {
 
   pushToStorage(){
 
-    this.widgets.push({title: this.menuService.widgetTitle, content: ""})
-    localStorage.setItem('storedWidgets', JSON.stringify(this.widgets))
+    this.cards.push({title: this.menuService.widgetTitle, content: ""})
+    localStorage.setItem('storedWidgets', JSON.stringify(this.cards))
   }
 
 
@@ -40,7 +40,7 @@ export class WidgetService implements OnInit {
   }
 
  clearAllWidgets() {
- this.widgets=[]
+ this.cards=[]
 }
 }
 
